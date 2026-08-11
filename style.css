@@ -235,31 +235,20 @@
   }
 }
 
-/* Mobile hero CTA centering only */
+/* Mobile hero CTA: center ONLY the two hero buttons */
 @media (max-width: 760px) {
-  .hero .copy {
-    width: 100%;
-  }
-
   .hero .actions {
-    width: min(360px, calc(100% - 28px));
-    margin: 27px auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-  }
-
-  .hero .actions .large {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: min(360px, calc(100vw - 56px));
     position: relative;
-    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 27px;
+    flex-direction: column;
   }
 
-  .hero .actions .large span {
-    position: absolute;
-    right: 18px;
+  .hero .actions .btn.large {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 }
