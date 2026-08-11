@@ -236,7 +236,7 @@
 }
 
 
-/* Mobile button sizing + centering fix */
+/* Mobile button sizing fix */
 @media (max-width: 760px) {
   .nav-actions .btn.primary {
     width: auto;
@@ -246,18 +246,14 @@
     white-space: nowrap;
   }
 
-  .copy .actions {
-    width: min(320px, calc(100% - 32px));
-    margin: 27px auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
+  .actions {
+    width: min(320px, calc(100vw - 40px));
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .copy .actions .btn.large {
+  .actions .large {
     width: 100%;
     min-width: 0;
-    margin: 0;
   }
 }
