@@ -23,10 +23,37 @@
     <p>A connected music platform for analyzing, understanding and improving your sound.</p>
     <div class="actions"><a class="btn primary large" href="https://app.soundlensapp.com/">Open SoundLens <span>→</span></a><a class="btn glass large" href="#plugin">Explore the Plugin <span>↓</span></a></div>
   </div>
-  <div class="showcase">
-    <figure class="screen core"><img src="assets/product-core.jpg" alt="SoundLens Core" /></figure>
-    <figure class="screen main"><img src="assets/product-main.png" alt="SoundLens Analyzer" /></figure>
-    <figure class="screen verdict"><img src="assets/product-verdict.jpg" alt="SoundLens Verdict" /></figure>
+  <div class="product-switcher" data-product-switcher>
+    <div class="product-switcher-top">
+      <div class="product-tabs" role="tablist" aria-label="Explore SoundLens products">
+        <button class="product-tab active" type="button" data-product-tab="plugin" role="tab" aria-selected="true">
+          <span>STUDIO</span>
+          SoundLens Plugin
+        </button>
+        <button class="product-tab" type="button" data-product-tab="analyzer" role="tab" aria-selected="false">
+          <span>WEB</span>
+          SoundLens Analyzer
+        </button>
+      </div>
+      <p class="product-switcher-caption" data-product-caption>
+        Capture, inspect and ask questions without leaving your DAW.
+      </p>
+    </div>
+
+    <div class="product-gallery-frame">
+      <div class="product-gallery-label">
+        <span data-product-kicker>PLUGIN</span>
+        <strong data-product-title>Live Capture</strong>
+      </div>
+      <img
+        class="product-gallery-main"
+        data-product-main
+        src="assets/hero-plugin-home.jpg"
+        alt="SoundLens Plugin live capture"
+      />
+    </div>
+
+    <div class="product-gallery-thumbs" data-product-thumbs aria-label="Product screenshots"></div>
   </div>
   <div class="features">
     <div class="feature"><span class="icon">≋</span><div><b>REAL-TIME ANALYSIS</b><p>Deep audio insights instantly.</p></div></div>
