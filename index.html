@@ -24,15 +24,50 @@
     <div class="actions"><a class="btn primary large" href="https://app.soundlensapp.com/">Open SoundLens <span>→</span></a><a class="btn glass large" href="#plugin">Explore the Plugin <span>↓</span></a></div>
   </div>
   <div class="hero-products">
-    <article class="hero-product-card hero-plugin-card">
-      <div class="hero-product-copy"><span>STUDIO · PLUGIN</span><h3>Work inside your DAW.</h3><p>Capture live audio, inspect resonance and stereo space, then ask SoundLens AI about the session.</p></div>
-      <div class="hero-product-screen"><img src="assets/hero-plugin-home.jpg" alt="SoundLens Plugin live capture" /></div>
-      <div class="hero-product-strip"><img src="assets/hero-plugin-space.jpg" alt="Stereo Space" /><img src="assets/hero-plugin-resonance.jpg" alt="Resonance" /><img src="assets/hero-plugin-ai.jpg" alt="AI Assistant" /></div>
+    <article class="hero-product-card plugin-card">
+      <div class="hero-product-copy">
+        <div>
+          <span class="hero-product-kicker">SOUNDLENS STUDIO</span>
+          <h3>Work inside your DAW.</h3>
+        </div>
+        <p>Capture live audio, inspect stereo space and resonance, then ask SoundLens AI about what you are hearing.</p>
+      </div>
+
+      <div class="hero-product-screen">
+        <img id="plugin-hero-image" src="assets/hero-plugin-home.jpg" alt="SoundLens Plugin live capture" />
+      </div>
+
+      <div class="hero-product-controls" aria-label="SoundLens Plugin screenshots">
+        <button class="hero-product-control active" type="button" data-gallery="plugin" data-image="assets/hero-plugin-home.jpg" data-alt="SoundLens Plugin live capture">Live Capture</button>
+        <button class="hero-product-control" type="button" data-gallery="plugin" data-image="assets/hero-plugin-space.jpg" data-alt="SoundLens Plugin stereo space">Space</button>
+        <button class="hero-product-control" type="button" data-gallery="plugin" data-image="assets/hero-plugin-resonance.jpg" data-alt="SoundLens Plugin resonance scan">Resonance</button>
+        <button class="hero-product-control" type="button" data-gallery="plugin" data-image="assets/hero-plugin-ai.jpg" data-alt="SoundLens Plugin AI assistant">AI</button>
+      </div>
     </article>
-    <article class="hero-product-card hero-analyzer-card">
-      <div class="hero-product-copy"><span>WEB · ANALYZER</span><h3>Take the analysis deeper.</h3><p>Upload a track and move through waveform analysis, verdicts, artist matching, Galaxy and the full report.</p></div>
-      <div class="hero-product-screen"><img src="assets/hero-analyzer-analyze.jpg" alt="SoundLens Analyzer waveform" /></div>
-      <div class="hero-product-strip analyzer-strip"><img src="assets/hero-analyzer-verdict.jpg" alt="Verdict" /><img src="assets/hero-analyzer-match.jpg" alt="Artist Match" /><img src="assets/hero-analyzer-galaxy.jpg" alt="Galaxy" /></div>
+
+    <article class="hero-product-card analyzer-card">
+      <div class="hero-product-copy">
+        <div>
+          <span class="hero-product-kicker">SOUNDLENS ANALYZER</span>
+          <h3>Take the analysis deeper.</h3>
+        </div>
+        <p>Upload a track or send it from the plugin, then move through reports, Artist Match, Galaxy and the SoundLens database.</p>
+      </div>
+
+      <div class="hero-product-screen">
+        <img id="analyzer-hero-image" src="assets/hero-analyzer-analyze.jpg" alt="SoundLens Analyzer waveform" />
+      </div>
+
+      <div class="hero-product-controls analyzer-controls" aria-label="SoundLens Analyzer screenshots">
+        <button class="hero-product-control active" type="button" data-gallery="analyzer" data-image="assets/hero-analyzer-analyze.jpg" data-alt="SoundLens Analyzer waveform">Analyze</button>
+        <button class="hero-product-control" type="button" data-gallery="analyzer" data-image="assets/hero-analyzer-overview.jpg" data-alt="SoundLens Analyzer overview">Overview</button>
+        <button class="hero-product-control" type="button" data-gallery="analyzer" data-image="assets/hero-analyzer-verdict.jpg" data-alt="SoundLens Analyzer verdict">Verdict</button>
+        <button class="hero-product-control" type="button" data-gallery="analyzer" data-image="assets/hero-analyzer-match.jpg" data-alt="SoundLens Artist Match">Artist Match</button>
+        <button class="hero-product-control" type="button" data-gallery="analyzer" data-image="assets/hero-analyzer-galaxy.jpg" data-alt="SoundLens Galaxy">Galaxy</button>
+        <button class="hero-product-control" type="button" data-gallery="analyzer" data-image="assets/hero-analyzer-database.jpg" data-alt="SoundLens artist database">Database</button>
+        <button class="hero-product-control" type="button" data-gallery="analyzer" data-image="assets/hero-analyzer-mainstream.jpg" data-alt="SoundLens mainstream collection coming soon">Coming Soon</button>
+        <button class="hero-product-control" type="button" data-gallery="analyzer" data-image="assets/hero-analyzer-pricing.jpg" data-alt="SoundLens pricing">Pricing</button>
+      </div>
     </article>
   </div>
   <div class="features">
