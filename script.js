@@ -19,6 +19,7 @@ document.querySelectorAll(".hero-product-control").forEach(button => {
     window.setTimeout(() => {
       image.src = button.dataset.image;
       image.alt = button.dataset.alt || "";
+      image.classList.toggle("artist-match-view", gallery === "analyzer" && button.textContent.trim() === "Artist Match");
       image.classList.remove("switching");
     }, 90);
   });
