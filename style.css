@@ -504,3 +504,24 @@
     padding-bottom:82px;
   }
 }
+
+
+/* Artist Match standalone section removed.
+   Keep the remaining Analyzer -> AI transition compact and intentional. */
+#analyzer.product-section{
+  padding-bottom:90px;
+}
+
+#ai.product-section{
+  padding-top:90px;
+}
+
+@media(max-width:760px){
+  #analyzer.product-section{
+    padding-bottom:64px;
+  }
+
+  #ai.product-section{
+    padding-top:64px;
+  }
+}
