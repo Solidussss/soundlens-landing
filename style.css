@@ -525,3 +525,12 @@
     padding-top:64px;
   }
 }
+
+
+/* About section product walkthrough video */
+.product-about-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #080a12;
+}
