@@ -546,3 +546,33 @@
 #ai .section-product img{aspect-ratio:auto;object-fit:contain}
 .hero-product-control{font-size:11px;min-height:36px;padding:0 14px}
 @media(max-width:760px){.hero-product-screen{aspect-ratio:16/10}.hero-product-control{font-size:10px}}
+
+
+/* Aug 18 landing cleanup */
+.product-ai img,
+.product-analyzer img,
+.hero-product-screen img {
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+}
+
+.product-ai,
+.product-analyzer,
+.hero-product-screen {
+  background: #080a12;
+}
+
+.product-ai img,
+.product-analyzer img {
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: auto !important;
+}
+
+/* Do not zoom Artist Match or any gallery image. */
+.hero-product-screen img.artist-match-view,
+.hero-product-screen img.artist-match-view.switching,
+.hero-product-screen img.switching {
+  transform: none !important;
+}
