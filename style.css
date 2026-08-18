@@ -90,8 +90,7 @@
   display: block;
 }
 
-.product-plugin img,
-.product-ai img {
+.product-plugin img {
   aspect-ratio: 1.62 / 1;
   object-fit: cover;
 }
@@ -119,9 +118,6 @@
     0 0 70px rgba(68, 210, 143, .07);
 }
 
-.product-ai {
-  border-color: rgba(107, 88, 255, .28);
-}
 
 .text-section {
   min-height: 660px;
@@ -173,8 +169,7 @@
   }
 
   .product-plugin img,
-  .product-ai img,
-  .product-analyzer img,
+    .product-analyzer img,
   .product-artist img {
     aspect-ratio: auto;
     object-fit: contain;
@@ -549,7 +544,6 @@
 
 
 /* Aug 18 landing cleanup */
-.product-ai img,
 .product-analyzer img,
 .hero-product-screen img {
   object-fit: contain !important;
@@ -563,7 +557,6 @@
   background: #080a12;
 }
 
-.product-ai img,
 .product-analyzer img {
   width: 100%;
   height: auto !important;
