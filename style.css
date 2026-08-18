@@ -534,3 +534,15 @@
   display: block;
   background: #080a12;
 }
+
+/* Aug 18 — current product landing refresh */
+.hero-product-screen{aspect-ratio:16/9;background:#05060c}
+.hero-product-screen img{object-fit:cover;object-position:center}
+.plugin-card .hero-product-screen img{object-fit:contain;background:#080a12}
+.analyzer-card .hero-product-screen img{object-fit:cover}
+#plugin .section-product img{aspect-ratio:auto;object-fit:contain}
+#analyzer .section-product img{aspect-ratio:auto;object-fit:contain}
+#ai .section-product{max-width:920px}
+#ai .section-product img{aspect-ratio:auto;object-fit:contain}
+.hero-product-control{font-size:11px;min-height:36px;padding:0 14px}
+@media(max-width:760px){.hero-product-screen{aspect-ratio:16/10}.hero-product-control{font-size:10px}}
