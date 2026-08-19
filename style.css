@@ -90,8 +90,7 @@
   display: block;
 }
 
-.product-plugin img,
-.product-ai img {
+.product-plugin img {
   aspect-ratio: 1.62 / 1;
   object-fit: cover;
 }
@@ -119,9 +118,6 @@
     0 0 70px rgba(68, 210, 143, .07);
 }
 
-.product-ai {
-  border-color: rgba(107, 88, 255, .28);
-}
 
 .text-section {
   min-height: 660px;
@@ -173,8 +169,7 @@
   }
 
   .product-plugin img,
-  .product-ai img,
-  .product-analyzer img,
+    .product-analyzer img,
   .product-artist img {
     aspect-ratio: auto;
     object-fit: contain;
@@ -535,16 +530,42 @@
   background: #080a12;
 }
 
+/* Aug 18 — current product landing refresh */
+.hero-product-screen{aspect-ratio:16/9;background:#05060c}
+.hero-product-screen img{object-fit:cover;object-position:center}
+.plugin-card .hero-product-screen img{object-fit:contain;background:#080a12}
+.analyzer-card .hero-product-screen img{object-fit:cover}
+#plugin .section-product img{aspect-ratio:auto;object-fit:contain}
+#analyzer .section-product img{aspect-ratio:auto;object-fit:contain}
+#ai .section-product{max-width:920px}
+#ai .section-product img{aspect-ratio:auto;object-fit:contain}
+.hero-product-control{font-size:11px;min-height:36px;padding:0 14px}
+@media(max-width:760px){.hero-product-screen{aspect-ratio:16/10}.hero-product-control{font-size:10px}}
 
-/* SoundLens navbar logo — larger */
-.brand .navbar-logo-image {
-  width: 250px;
-  max-height: 70px;
+
+/* Aug 18 landing cleanup */
+.product-analyzer img,
+.hero-product-screen img {
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
 }
 
-@media (max-width: 760px) {
-  .brand .navbar-logo-image {
-    width: 190px;
-    max-height: 58px;
-  }
+.product-ai,
+.product-analyzer,
+.hero-product-screen {
+  background: #080a12;
+}
+
+.product-analyzer img {
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: auto !important;
+}
+
+/* Do not zoom Artist Match or any gallery image. */
+.hero-product-screen img.artist-match-view,
+.hero-product-screen img.artist-match-view.switching,
+.hero-product-screen img.switching {
+  transform: none !important;
 }
