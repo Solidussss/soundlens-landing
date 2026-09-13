@@ -89,5 +89,8 @@
 
 </main>
 <script src="script.js"></script>
+<script>
+(async()=>{try{const d=location.hostname.replace(/^www\./,'');const r=await fetch('https://app.siteremade.com/api/public/analytics-config?domain='+encodeURIComponent(d));if(!r.ok)return;const c=await r.json();if(!c.ok||!c.src||!c.websiteId)return;const s=document.createElement('script');s.async=true;s.defer=true;s.src=c.src;s.setAttribute('data-website-id',c.websiteId);document.head.appendChild(s);}catch(e){}})();
+</script>
 </body>
 </html>
